@@ -5,6 +5,13 @@ from collections import OrderedDict
 import math
 
 
+SCALE = 96 # Pixels per inch, assuming abstract units are inches
+HEIGHT = 60
+WIDTH = 60
+SHIFT_Y = 0
+SHIFT_X = 0
+
+
 def x(x, dx, sx=1):
   return (x * sx - SHIFT_X + dx) * SCALE
 
