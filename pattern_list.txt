@@ -1,0 +1,3 @@
+p_0001 Fitted shirt, copied from existing shirt
+p_0002 Casual shirt with yoke, copied from existing shirt
+
