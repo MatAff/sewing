@@ -1,0 +1,92 @@
+{
+    "button_box_center_waist": {
+        "anchor": [
+            -1.5,
+            0
+        ],
+        "in_angle": 270,
+        "in_distance": 0.5,
+        "out_angle": 90,
+        "out_distance": 2
+    },
+    "button_box_center_neck": {
+        "anchor": [
+            -1.5,
+            14.2
+        ],
+        "in_angle": 270,
+        "in_distance": 0.5,
+        "out_angle": 0,
+        "out_distance": 1
+    },
+    "center_neck": {
+        "anchor": [
+            0,
+            14.2
+        ],
+        "in_angle": 270,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 2
+    },
+    "high_shoulder": {
+        "anchor": [
+            3,
+            18.25
+        ],
+        "in_angle": 245,
+        "in_distance": 0.5,
+        "out_angle": -10,
+        "out_distance": 2
+    },
+    "shoulder": {
+        "anchor": [
+            8.5,
+            16.1
+        ],
+        "in_angle": 150,
+        "in_distance": 0.5,
+        "out_angle": 260,
+        "out_distance": 3
+    },
+    "syce": {
+        "anchor": [
+            10.073,
+            7.439
+        ],
+        "in_angle": 160,
+        "in_distance": 3.25,
+        "out_angle": 250,
+        "out_distance": 6
+    },
+    "side_shirt_length": {
+        "anchor": [
+            9.478,
+            -8.527
+        ],
+        "in_angle": 100,
+        "in_distance": 5,
+        "out_angle": 190,
+        "out_distance": 2
+    },
+    "shirt_length": {
+        "anchor": [
+            0,
+            -10.5
+        ],
+        "in_angle": 0,
+        "in_distance": 6,
+        "out_angle": 90,
+        "out_distance": 0
+    },
+    "button_box_shirt_length": {
+        "anchor": [
+            -1.5,
+            -10.5
+        ],
+        "in_angle": 0,
+        "in_distance": 1,
+        "out_angle": 90,
+        "out_distance": 10
+    }
+}
