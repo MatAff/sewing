@@ -730,7 +730,7 @@ def split_bezier_curve_wrapper(start_anchor_data, end_anchor_data, line_start, l
   return start_point_dict, mid_point_dict, end_point_dict
 
 
-def get_calibration_square_bezier_path_points(self, start_x, start_y, end_x, end_y):
+def get_calibration_square_bezier_path_points(start_x, start_y, end_x, end_y):
   bezier_points = OrderedDict()
   bezier_points['top_left'] = create_anchor_with_handles((start_x, end_y))
   bezier_points['top_right'] = create_anchor_with_handles((end_x, end_y))
