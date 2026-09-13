@@ -10,8 +10,6 @@ SHIFT_Y = 0
 SHIFT_X = 0
 
 
-
-
 # --- --- --- CONVERSION FUNCTIONS --- --- --- 
 
 def cm_to_inch(cm):
@@ -20,6 +18,14 @@ def cm_to_inch(cm):
 
 def inch_to_cm(inch):
   return inch * 2.54
+
+
+def radians_to_degrees(radians):
+  return math.degrees(radians)
+
+
+def degrees_to_radians(degrees):
+  return math.radians(degrees)
 
 # --- --- --- GEOMETRY FUNCTIONS --- --- --- 
 
@@ -375,6 +381,48 @@ def calculate_bezier_path_length(points_with_handles, num_segments=100):
 
   return total_bezier_length
 
+
+def rotate_anchor_point_dict(anchor_dict, angle, origin_point=(0, 0)):
+    """
+    Rotates an anchor point dictionary (anchor and its handles' orientation)
+    around a specified origin point.
+
+    The anchor point's coordinates are rotated, and its in/out angles are adjusted
+    by the rotation angle. The handles are then recalculated based on the new
+    anchor position and angles, maintaining their original distances.
+
+    Args:
+        anchor_dict (dict): The original anchor point dictionary.
+        angle (float): The angle (MA: I think this should be in radians)
+        origin_point (tuple, optional): The (x, y) coordinates of the rotation origin.
+                                        Defaults to (0, 0).
+
+    Returns:
+        dict: A new anchor point dictionary with rotated coordinates and adjusted angles.
+    """
+    # Rotate the anchor point around the origin
+    rotated_anchor_coords = rotate_by_angle(origin_point, anchor_dict['anchor'], angle)
+
+    # Adjust the in_angle and out_angle
+    # Ensure the angles stay within a standard range (e.g., 0 to 360)
+    new_in_angle = (anchor_dict['in_angle'] + angle) % 360
+    if new_in_angle < 0:
+        new_in_angle += 360
+
+    new_out_angle = (anchor_dict['out_angle'] + angle) % 360
+    if new_out_angle < 0:
+        new_out_angle += 360
+
+    # Reconstruct the anchor_point_dict using create_anchor_with_handles
+    # This automatically recalculates handle_in and handle_out based on the new anchor and angles.
+    rotated_anchor_dict = create_anchor_with_handles(
+        rotated_anchor_coords,
+        new_in_angle,
+        anchor_dict['in_distance'],
+        new_out_angle,
+        anchor_dict['out_distance']
+    )
+    return rotated_anchor_dict
 
 
 def bezier_path_angle_between_mid_point(start_anchor_data, mid_anchor_data, end_anchor_data):
