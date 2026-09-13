@@ -812,3 +812,73 @@ def get_calibration_square_bezier_path_points(start_x, start_y, end_x, end_y):
   bezier_points['bottom_right'] = create_anchor_with_handles((end_x, start_y))
   bezier_points['bottom_left'] = create_anchor_with_handles((start_x, start_y))
   return bezier_points
+
+
+def remove_handle(anchor_dict, handle_type):
+  """
+  Removes either the 'in' or 'out' handle from an anchor_dict by setting its distance to zero.
+
+  Args:
+    anchor_dict (dict): The original anchor point dictionary.
+    handle_type (str): Specifies which handle to remove, either 'in' or 'out'.
+
+  Returns:
+    dict: A new anchor point dictionary with the specified handle's distance set to zero.
+  """
+  if handle_type not in ['in', 'out']:
+    raise ValueError("handle_type must be either 'in' or 'out'")
+
+  in_angle = anchor_dict['in_angle']
+  in_distance = anchor_dict['in_distance']
+  out_angle = anchor_dict['out_angle']
+  out_distance = anchor_dict['out_distance']
+
+  if handle_type == 'in':
+    in_distance = 0
+  elif handle_type == 'out':
+    out_distance = 0
+
+  return create_anchor_with_handles(
+      anchor_dict['anchor'],
+      in_angle,
+      in_distance,
+      out_angle,
+      out_distance
+  )
+
+
+def reduce_handle_size(anchor_dict, handle_type, ratio):
+  """
+  Reduces the size (distance) of either the 'in' or 'out' handle of an anchor_dict
+  by a specified ratio.
+
+  Args:
+    anchor_dict (dict): The original anchor point dictionary.
+    handle_type (str): Specifies which handle to modify, either 'in' or 'out'.
+    ratio (float): The ratio by which to reduce the handle's distance (e.g., 0.5 for half size).
+
+  Returns:
+    dict: A new anchor point dictionary with the specified handle's distance reduced.
+  """
+  if handle_type not in ['in', 'out']:
+    raise ValueError("handle_type must be either 'in' or 'out'")
+  if not (0 <= ratio <= 1):
+    raise ValueError("ratio must be between 0 and 1 inclusive.")
+
+  in_angle = anchor_dict['in_angle']
+  in_distance = anchor_dict['in_distance']
+  out_angle = anchor_dict['out_angle']
+  out_distance = anchor_dict['out_distance']
+
+  if handle_type == 'in':
+    in_distance *= ratio
+  elif handle_type == 'out':
+    out_distance *= ratio
+
+  return create_anchor_with_handles(
+      anchor_dict['anchor'],
+      in_angle,
+      in_distance,
+      out_angle,
+      out_distance
+  )
