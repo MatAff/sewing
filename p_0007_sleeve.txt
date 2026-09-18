@@ -1,0 +1,163 @@
+SLEEVE: MANUALLY SMOOTH OUT TOP SHAPE
+{
+    "bottom_start_hem": {
+        "anchor": [
+            7.985466200695884,
+            -4.236523442052094
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_hem": {
+        "anchor": [
+            15.208199641150154,
+            -4.236523442052094
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_end": {
+        "anchor": [
+            14.804991759849553,
+            -3.2365234420520936
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_syce": {
+        "anchor": [
+            16.109983519699107,
+            0
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_curve_0.125": {
+        "anchor": [
+            14.901762225072899,
+            0.3605565710388714
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_curve_0.25": {
+        "anchor": [
+            13.907603852392029,
+            1.0515331406384283
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_curve_0.5": {
+        "anchor": [
+            12.154756321170165,
+            2.796948278254296
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "front_sleeve_curve_0.75": {
+        "anchor": [
+            10.3376899133647,
+            4.443237416301958
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "shoulder": {
+        "anchor": [
+            7.985466200695884,
+            5.263476557947906
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_curve_0.25": {
+        "anchor": [
+            5.577430017769626,
+            4.572170651906379
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_curve_0.5": {
+        "anchor": [
+            3.7327312270307083,
+            3.026199268518448
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_curve_0.75": {
+        "anchor": [
+            2.061367018503279,
+            1.217253892100853
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_curve_0.875": {
+        "anchor": [
+            1.106517388969166,
+            0.4935758240999485
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_syce": {
+        "anchor": [
+            0,
+            0
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_end": {
+        "anchor": [
+            1.3049917598495533,
+            -3.2365234420520936
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "back_sleeve_hem": {
+        "anchor": [
+            0.9017838785489523,
+            -4.236523442052094
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    }
+}
