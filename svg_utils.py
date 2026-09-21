@@ -882,3 +882,11 @@ def reduce_handle_size(anchor_dict, handle_type, ratio):
       out_angle,
       out_distance
   )
+
+
+def shift_point(point, dx, dy):
+  return (point[0] + dx, point[1] + dy)
+
+
+def move_anchor_point(anchor_point, dx, dy):
+  return create_anchor_with_handles(shift_point(anchor_point['anchor'], dx, dy), anchor_point['in_angle'], anchor_point['in_distance'], anchor_point['out_angle'], anchor_point['out_distance'])
