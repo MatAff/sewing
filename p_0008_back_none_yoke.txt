@@ -1,0 +1,52 @@
+{
+    "yoke_center": {
+        "anchor": [
+            0.0,
+            14.24999999999999
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": 0,
+        "out_distance": 0
+    },
+    "yoke_outer_bottom": {
+        "anchor": [
+            8.231617991081643,
+            14.0
+        ],
+        "in_angle": 0,
+        "in_distance": 0,
+        "out_angle": -106.86121532438641,
+        "out_distance": 2.9305416382752574
+    },
+    "armhole": {
+        "anchor": [
+            9.875,
+            6.75
+        ],
+        "in_angle": 165,
+        "in_distance": 2.4,
+        "out_angle": 250,
+        "out_distance": 6
+    },
+    "hip": {
+        "anchor": [
+            9.375,
+            -9.5
+        ],
+        "in_angle": 100,
+        "in_distance": 5,
+        "out_angle": 190,
+        "out_distance": 2
+    },
+    "center_hip": {
+        "anchor": [
+            0,
+            -10.25
+        ],
+        "in_angle": 0,
+        "in_distance": 6,
+        "out_angle": 90,
+        "out_distance": 0
+    }
+}
