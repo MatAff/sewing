@@ -1,4 +1,3 @@
-SLEEVE: MANUALLY SMOOTH OUT TOP SHAPE
 {
     "bottom_start_hem": {
         "anchor": [
